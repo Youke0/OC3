@@ -1,19 +1,19 @@
 @font-face {
-    font-family:'Shrikhand';
+    font-family:Shrikhand;
     src: url('/Projet3Livrable/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family:'Roboto';
+    font-family:Roboto;
     src: url('/Projet3Livrable/Roboto/Roboto-Medium.ttf') format('truetype');
     src: url('/Projet3Livrable/Roboto/Roboto-Regular.ttf') format('truetype');
     src: url('/Projet3Livrable/Roboto/Roboto-Bold.ttf') format('truetype');
 }
 
 h1, h2, h3 {
-    font-family: 'Shrikhand';
+    font-family: Shrikhand;
 }
 
-body {
-    font-family: 'Roboto';
+p, nav, figcaption, a {
+    font-family:Roboto;
 }
