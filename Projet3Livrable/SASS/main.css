@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Shrikland;
+  src: url(/Projet3Livrable/Shrikland/Shrikhand-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/Projet3Livrable/Roboto/Roboto-Medium.ttf) format(truetype);
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 200%;
+}/*# sourceMappingURL=main.css.map */
