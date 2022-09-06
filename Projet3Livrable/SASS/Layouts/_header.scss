@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+}
+
+#bloc_sous-titre {
+    background-color: #dddddd;
+    box-shadow: inset 0px 2px 5px #aaaaaa;
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+}
+
+#logo_map {
+    margin-top: 17px;
+    margin-right: 20px;
+}
+
+.présentationrestau {
+    font-size: larger;
+}
+
+.présentationrestau2 {
+    font-size: smaller;
+    opacity: 0.6;
+}
