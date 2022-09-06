@@ -1,12 +1,53 @@
+@charset "UTF-8";
 @font-face {
-  font-family: Shrikland;
-  src: url(/Projet3Livrable/Shrikland/Shrikhand-Regular.ttf) format(truetype);
+  font-family: Shrikhand;
+  src: url("/Projet3Livrable/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: Roboto;
-  src: url(/Projet3Livrable/Roboto/Roboto-Medium.ttf) format(truetype);
+  src: url("/Projet3Livrable/Roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("/Projet3Livrable/Roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("/Projet3Livrable/Roboto/Roboto-Bold.ttf") format("truetype");
 }
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 200%;
+h1, h2, h3 {
+  font-family: Shrikhand;
+}
+
+p, nav, figcaption, a {
+  font-family: Roboto;
+}
+
+.boutonaccueil {
+  padding: 15px 20px 15px 20px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  margin-top: 15px;
+}
+
+header {
+  text-align: center;
+}
+
+#bloc_sous-titre {
+  background-color: #dddddd;
+  box-shadow: inset 0px 2px 5px #aaaaaa;
+  display: flex;
+  justify-content: center;
+  font-size: smaller;
+}
+
+#logo_map {
+  margin-top: 17px;
+  margin-right: 20px;
+}
+
+.présentationrestau {
+  font-size: larger;
+}
+
+.présentationrestau2 {
+  font-size: smaller;
+  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */
