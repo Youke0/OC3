@@ -24,10 +24,19 @@ p, nav, figcaption, a {
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 header {
   text-align: center;
+  width: auto;
+  height: auto;
+  background-color: #E4E6E5;
+}
+
+h1 {
+  background-color: white;
+  margin: 0;
 }
 
 #bloc_sous-titre {
@@ -50,4 +59,8 @@ header {
 .présentationrestau2 {
   font-size: smaller;
   opacity: 0.6;
+}
+
+body {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
