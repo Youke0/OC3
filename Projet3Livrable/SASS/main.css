@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /*Bordure utilisée pour toute les pages*/
+/*Media Querry*/
+/*Taille de la police sur mobile*/
 section {
   text-align: center;
   background-color: #F8F8F8;
