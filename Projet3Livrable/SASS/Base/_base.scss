@@ -1,0 +1,54 @@
+section {
+    text-align: center;
+    background-color:  #F8F8F8;
+        &>h2 {
+        background-color: #F8F8F8;
+        }
+}
+
+#bloc_restaurants_accueil {
+    padding: 40px 0px 40px 0px;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+figure {
+    border-radius: 20px;
+    @include box-shadow;
+        &>img {
+        width: 1000px;
+        height: 500px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        }
+        &>figcaption {
+        padding: 0px 0px 10px 20px;
+        text-align: left;
+        color: black;
+        }
+            &>figcaption>i {
+                float: right;
+                padding: 10px 40px 0px 0px;
+            }
+}
+
+.icone_nouveau1, .icone_nouveau2 {
+    width: 100px;
+    background-color: $tertiary-color;
+    color: darken($color: $tertiary-color, $amount: 50%);
+    padding: 3px 0px 3px 0px;
+    position: absolute;
+    top: 990px;
+    left: 1010px;
+}
+
+.icone_nouveau2 {
+    top: 1670px;
+}
+
+
+
