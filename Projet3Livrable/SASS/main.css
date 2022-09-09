@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Bordure utilisée pour toute les pages*/
 section {
   text-align: center;
   background-color: #F8F8F8;
@@ -69,6 +70,7 @@ p, nav, figcaption, a {
   font-family: sans-serif;
 }
 
+/*Bouton de la page d'accueil*/
 .boutonaccueil {
   padding: 15px 20px 15px 20px;
   border-radius: 50px;
