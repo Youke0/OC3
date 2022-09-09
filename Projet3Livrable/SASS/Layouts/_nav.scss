@@ -3,60 +3,41 @@
 header >h2, nav { 
     background-color: white;
     margin: 0;
-    padding: 3% 0 3% 0;
+    padding: 6% 0% 0% 5%;
+    text-align: left;
 }
 
 a {
     display: flex;
-    justify-content: center;
-    margin-bottom: 3%;
+    justify-content: left;
+    margin: 0% 5% 3% 2%;
     text-decoration: none;
+    align-items: baseline;
         &>#un, #deux, #trois {
             border-radius: 40px;
             color: white;
             background-color: $primary-color;
-            margin-top: 20px;
             position: absolute;
-        }
-        &>#un,#deux, #trois {
-            margin-right: 21.5%;
-        }
-        &>#un {
-            padding: 3px 7px 3px 7px;
-        }
-        &>#deux {
-            padding: 3px 6px 3px 6px;
-        }
-        &>#trois {
-            padding: 3px 4px 3px 4px;
+            border: solid 1px $primary-color;
+            padding: 10px 14px 10px 14px;
+            margin: 40px 0px 40px -20px;
         }
         &>.bloc_fonctionnement, .bloc_fonctionnement2, .bloc_fonctionnement3 {
             border: solid 0px #dddddd;
-            border-radius: 20px;
-            padding: 20px 50px 20px 0px;
+            border-radius: 40px;
+            padding:40px 40px 40px 40px;
+            max-width: 800px;
+            width: 100%;
+            font-size: 30px;
             background-color: #F8F8F8;
             color: black;
             @include box-shadow;
+            margin-bottom: 2%;
         }
-        &>.bloc_fonctionnement {
-            padding-right: 40px;
-        }
-            &>.bloc_fonctionnement>#mobile {
-                padding: 0px 20px 0px 20px;
-            }
-        &>.bloc_fonctionnement2 {
-            padding-right: 60px;
-        }
-            &>.bloc_fonctionnement2>#bars {
-                padding: 0px 16px 0px 22px;
+            &>.bloc_fonctionnement>#mobile, &>.bloc_fonctionnement2>#bars, &>.bloc_fonctionnement3>#store {
+                padding: 0% 10% 0% 10%;
             }
         &>.bloc_fonctionnement3 {
-            padding-right: 50px;
-            margin-left: 40px;
-            margin-right: 40px;
             background-color:lighten($color: $primary-color, $amount: 35%); 
         }
-            &>.bloc_fonctionnement3>#store {
-                padding:0px 16px 0px 18px;
-            } 
 }
