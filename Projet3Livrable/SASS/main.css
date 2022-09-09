@@ -1,4 +1,48 @@
 @charset "UTF-8";
+section {
+  text-align: center;
+  background-color: #F8F8F8;
+}
+section > #bloc_restaurants_accueil {
+  padding: 40px 0px 40px 0px;
+}
+section > h2 {
+  background-color: #F8F8F8;
+}
+section figure {
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px #cccccc;
+}
+section figure > img {
+  width: 1000px;
+  height: 500px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section figure > figcaption {
+  padding: 0px 0px 10px 20px;
+  text-align: left;
+  color: black;
+}
+section figure > figcaption > i {
+  float: right;
+  padding: 10px 40px 0px 0px;
+}
+section figure .icone_nouveau1, section figure .icone_nouveau2 {
+  width: 100px;
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 3px 0px 3px 0px;
+  position: absolute;
+  top: 990px;
+  left: 1010px;
+}
+section figure .icone_nouveau2 {
+  top: 1670px;
+}
+
 @font-face {
   font-family: Shrikhand;
   src: url("/Projet3Livrable/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
@@ -17,6 +61,14 @@ p, nav, figcaption, a {
   font-family: Roboto;
 }
 
+.restaurant_name {
+  font-size: larger;
+}
+
+.restaurant_localisation {
+  font-family: sans-serif;
+}
+
 .boutonaccueil {
   padding: 15px 20px 15px 20px;
   border-radius: 50px;
@@ -33,36 +85,31 @@ header {
   height: auto;
   background-color: #F8F8F8;
 }
-
-h1 {
+header > h1 {
   background-color: white;
   margin: 0;
 }
-
-#bloc_sous-titre {
+header > #bloc_sous-titre {
   background-color: #F0F0F2;
   box-shadow: inset 0px 2px 5px #aaaaaa;
   display: flex;
   justify-content: center;
   font-size: smaller;
 }
-
-#logo_map {
+header > #bloc_sous-titre > #logo_map {
   margin-top: 17px;
   margin-right: 20px;
 }
-
-.présentationrestau {
+header > .présentationrestau {
   font-size: larger;
 }
-
-.présentationrestau2 {
+header > .présentationrestau2 {
   font-size: smaller;
   opacity: 0.6;
 }
 
 /*Partie Fonctionnement de la page d'Accueil*/
-h2, nav {
+header > h2, nav {
   background-color: white;
   margin: 0;
   padding: 3% 0 3% 0;
@@ -133,6 +180,40 @@ a {
 
 #store {
   padding: 0px 16px 0px 20px;
+}
+
+footer {
+  background-color: black;
+  text-align: left;
+  padding-left: 50px;
+}
+footer > h3 {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  filter: invert(100%);
+  width: 100px;
+}
+footer > h3 > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer > a {
+  padding: 0px 0px 20px 0px;
+  margin: 0;
+  color: white;
+  justify-content: left;
+}
+footer > a > #couverts {
+  padding-right: 20px;
+}
+footer > a > #hands {
+  padding-right: 14px;
+}
+footer > .contact {
+  padding-bottom: 50px;
 }
 
 body {
