@@ -44,6 +44,7 @@ section figure .icone_nouveau1, section figure .icone_nouveau2 {
 
 h2 {
   margin-left: 5%;
+  font-size: 40px;
 }
 
 @font-face {
@@ -136,7 +137,7 @@ a > #un, a #deux, a #trois {
   position: absolute;
   border: solid 1px #9356DC;
   padding: 10px 14px 10px 14px;
-  margin: 40px 0px 40px -20px;
+  margin: 50px 0px 40px -20px;
 }
 a > .bloc_fonctionnement, a .bloc_fonctionnement2, a .bloc_fonctionnement3 {
   border: solid 0px #dddddd;
