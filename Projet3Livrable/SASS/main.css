@@ -36,7 +36,7 @@ section figure .icone_nouveau1, section figure .icone_nouveau2 {
   width: 100px;
   background-color: #99E2D0;
   color: #1b6150;
-  padding: 3px 0px 3px 0px;
+  padding: 3px 0px 3px 15px;
   position: relative;
   left: 84%;
   bottom: 385px;
@@ -134,10 +134,10 @@ a > #un, a #deux, a #trois {
   border-radius: 40px;
   color: white;
   background-color: #9356DC;
-  position: absolute;
+  position: relative;
   border: solid 1px #9356DC;
   padding: 10px 14px 10px 14px;
-  margin: 50px 0px 40px -20px;
+  margin: 50px -20px 40px -20px;
 }
 a > .bloc_fonctionnement, a .bloc_fonctionnement2, a .bloc_fonctionnement3 {
   border: solid 0px #dddddd;
