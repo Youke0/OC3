@@ -32,6 +32,9 @@ section figure > figcaption > i {
   float: right;
   padding: 10px 40px 0px 0px;
 }
+section figure > .legende {
+  margin-top: 3%;
+}
 section figure .icone_nouveau1, section figure .icone_nouveau2 {
   width: 100px;
   background-color: #99E2D0;
@@ -110,11 +113,15 @@ p, nav, figcaption, a {
 }
 
 .restaurant_name {
-  font-size: larger;
+  font-weight: bolder;
+  margin: 0;
+  font-size: 30px;
 }
 
 .restaurant_localisation {
   font-family: sans-serif;
+  font-size: 30px;
+  margin: 2% 0% 2% 0%;
 }
 
 /*Bouton de la page d'accueil*/
