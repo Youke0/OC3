@@ -4,79 +4,93 @@
 
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="/Projet3Livrable/SASS/main.css"/>
         <title>La palette du goût</title>
     </head>
 
     <body>
         <script src="https://kit.fontawesome.com/17de8f715a.js" crossorigin="anonymous"></script>
 
-        <header class="headerpage1">
-            <h1 class="ohmyfood"><i class="fa-solid fa-arrow-left"></i><img src="/Projet3Livrable/images/logo/ohmyfood.png" alt="ohmyfood"></h1>
-            <img src="/Projet3Livrable/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant La palette du goût"/>
+        <header class="header_restaurant">
+            <h1 class="titre_restaurant">
+                <a href="pagedaccueil.html">
+                <i class="fa-solid fa-arrow-left fleche_gauche"></i>
+                </a>
+                <img src="/Projet3Livrable/images/logo/ohmyfood.png" alt="ohmyfood">
+            </h1>
+            <img class ="image_restaurant" src="/Projet3Livrable/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant La palette du goût"/>
         </header>
 
-        <section>
-            <h2 class="nom_restaurant">La palette du goût<i class="fa-solid fa-heart"></i></h2>
-            <h3 class="titre_entrees">Entrées</h3>
+        <section class="section_restaurant">
+            <h2 class="nom_restaurant">La palette du goût<i class="fa-regular fa-heart coeur_restaurant"></i></h2>
+            <h3 class="titre_entrees">ENTRÉES</h3>
             <div class="entrées">
-                <div class="bloc_entree_1">
-                    <p class="entrée1"><strong>Fricassée d'escargot</strong><br>Au piment d'espelette</p>
+                <div class="bloc_entree">
+                    <p class="entrée">Fricassée d'escargot</p>
+                    <p class="accompagnements">Au piment d'espelette</p>
                     <div class="prix">25€</div>
                 </div>
 
-                <div class="bloc_entree_2">
-                    <p class="entrée2"><strong>Foie gras de canard mi-cuit</strong><br>Et ses copeaux de truffe noire</p>
+                <div class="bloc_entree">
+                    <p class="entrée">Foie gras de canard mi-cuit</p>
+                    <p class="accompagnements">Et ses copeaux de truffe noire</p>
                     <div class="prix">35€</div>
                 </div>
 
-                <div class="bloc_entree_3">
-                    <p class="entrée3"><strong>Oeuf au plat</strong><br>Assaisonné à la truffe sur lit de caviar</p>
+                <div class="bloc_entree">
+                    <p class="entrée">Oeuf au plat</p>
+                    <p class="accompagnements">Assaisonné à la truffe sur lit de caviar</p>
                     <div class="prix">20€</div>
                 </div>
             </div>
 
             <h3 class="titre_plats">Plats</h3>
             <div class="plats">
-                <div class="bloc_plat_1">
-                    <p class="plat1"><strong>Filet de boeuf aux herbes</strong><br>Accompagné de sa ribambelle de légumes</p>
+                <div class="bloc_plat">
+                    <p class="plat">Filet de boeuf aux herbes</p>
+                    <p class="accompagnements">Accompagné de sa ribambelle de légumes</p>
                     <div class="prix">40€</div>
                 </div>
 
-                <div class="bloc_plat_2">
-                    <p class="plat2"><strong>Parmentier de queue de boeuf</strong><br>À la truffe noire sur sa purée de panais</p>
+                <div class="bloc_plat">
+                    <p class="plat">Parmentier de queue de boeuf</p>
+                    <p class="accompagnements">À la truffe noire sur sa purée de panais</p>
                     <div class="prix">35€</div>
                 </div>
 
-                <div class="bloc_plat_3">
-                    <p class="plat3"><strong>Filet de Turbot</strong><br>Aux agrumes</p>
+                <div class="bloc_plat">
+                    <p class="plat">Filet de Turbot</p>
+                    <p class="accompagnements">Aux agrumes</p>
                     <div class="prix">44€</div>
                 </div>
             </div>
 
             <h3 class="titre_desserts">Desserts</h3>
             <div class="desserts">
-                <div class="bloc_dessert_1">
-                    <p class="dessert1"><strong>Paris Brest</strong><br>Revisité</p>
+                <div class="bloc_dessert">
+                    <p class="dessert">Paris Brest</p>
+                    <p class="accompagnements">Revisité</p>
                     <div class="prix">18€</div>
                 </div>
 
-                <div class="bloc_dessert2">
-                    <p class="dessert2"><strong>Macaron au chocolat d'exception</strong><br>Et glace à la vanille de Madagascar</p>
+                <div class="bloc_dessert">
+                    <p class="dessert">Macaron au chocolat d'exception</p>
+                    <p class="accompagnements">Et glace à la vanille de Madagascar</p>
                     <div class="prix">22€</div>
                 </div>
 
-                <div class="bloc_dessert_3">
-                    <p class="dessert3"><strong>Mousse au chocolat</strong><br>Au piment d'espelette et à la truffe noire</p>
+                <div class="bloc_dessert">
+                    <p class="dessert">Mousse au chocolat</p>
+                    <p class="accompagnements">Au piment d'espelette et à la truffe noire</p>
                     <div class="prix">23€</div>
                 </div>
             </div>
 
-            <button class="button_commander">Commander</button>
+            <button class="bouton_commander">Commander</button>
         </section>
 
-        <footer>
-            <h3><img src="/Projet3Livrable/images/logo/ohmyfood.png" alt="ohmyfood"></h3>
+        <footer class="footer_restaurants">
+            <h3><img class="logo_footer" src="/Projet3Livrable/images/logo/ohmyfood.png" alt="ohmyfood"></h3>
             <a href=""><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
             <a href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
             <a href="">Mentions légales</a>
