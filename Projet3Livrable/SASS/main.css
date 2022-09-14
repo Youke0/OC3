@@ -222,6 +222,10 @@ header > h1 > a {
   margin-left: 28%;
 }
 
+.coeur_restaurant3 {
+  margin-left: 40%;
+}
+
 /*Partie Fonctionnement de la page d'Accueil*/
 header > h2, nav {
   background-color: white;
