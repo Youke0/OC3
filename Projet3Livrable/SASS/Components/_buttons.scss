@@ -22,3 +22,11 @@
     margin: 10% 0% 10% 30%;
     @include box-shadow;
 }
+
+.boutonaccueil:hover, .bouton_commander:hover {
+    filter: brightness(130%);
+}
+
+.boutonaccueil:active, .bouton_commander:active {
+    box-shadow: 0px 5px 50px #aaaaaa;
+}
