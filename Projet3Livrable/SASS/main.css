@@ -148,6 +148,14 @@ p, nav, figcaption, a {
   box-shadow: 0px 3px 10px #cccccc;
 }
 
+.boutonaccueil:hover, .bouton_commander:hover {
+  filter: brightness(130%);
+}
+
+.boutonaccueil:active, .bouton_commander:active {
+  box-shadow: 0px 5px 50px #aaaaaa;
+}
+
 header {
   text-align: center;
   width: auto;
