@@ -23,10 +23,7 @@ section {
                         text-align: left;
                         color: black;
                     }
-                        &>figcaption>i {
-                            float: right;
-                            padding: 10px 40px 0px 0px;
-                        }
+                        
                     &>.legende {
                         margin-top: 3%;
                     }
@@ -47,6 +44,64 @@ h2 {
     font-size: 40px;
 }
 
+/*test pour le coeur*/
+
+section #bloc_restaurants_accueil .heart {
+    position: absolute;
+    right: 14%;
+    top: 101%;
+    font-size: 45px;
+    color: #7D7D7D;
+}
+
+section #bloc_restaurants_accueil .heart .fa-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section #bloc_restaurants_accueil .heart .solidheart {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    background: linear-gradient(175deg, #ff79da 25%, #a45cdc 75%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+}
+
+section #bloc_restaurants_accueil .heart:hover .solidheart {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+section #bloc_restaurants_accueil .heart_deux {
+    top: 130%;
+}
+
+section #bloc_restaurants_accueil .heart_trois {
+    
+    top: 159%;
+}
+
+section #bloc_restaurants_accueil .heart_quatre {
+    top: 187%;
+}
+@media (min-width:992px){
+    section #bloc_restaurants_accueil .heart {
+        top: 355%;
+    }
+    section #bloc_restaurants_accueil .heart_deux {
+        top: 458%;
+    }
+    section #bloc_restaurants_accueil .heart_trois{
+        top: 562%;
+    }
+    section #bloc_restaurants_accueil .heart_quatre {
+        top: 668%;
+    }
+}
 /*Code CSS des pages des restaurants*/
 
 .section_restaurant {
