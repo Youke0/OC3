@@ -1,3 +1,70 @@
 body {
     margin: 0;
 }
+
+/*Animation du Loading Spinner */
+
+.bar {
+    border: 2px solid grey;
+    width: 60%;
+    height: 20px;
+    margin: 20% 20% 0% 20%;
+    position: fixed;
+    animation: bar-animation 1ms 3000ms;
+    z-index: 10;
+}
+
+.progression__bar {
+    
+    height: 100%;
+    width: 100%;
+    transform-origin: left;
+    animation: progress-bar 2500ms 500ms;
+    background: linear-gradient(0.25turn,#FF79DA, #9356DC);
+    animation-fill-mode: backwards;
+}
+
+@keyframes progress-bar {
+    0% {
+        transform: scaleX(0);
+        opacity: 0.1;
+    }
+    18% {
+        transform: scaleX(0.18);
+    }
+    36% {
+        transform: scaleX(0.36);
+    }
+    54% {
+        transform: scaleX(0.54);
+    }
+    78% {
+        transform: scaleX(0.78);
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bar-animation {
+    0% {
+        left: 0%;
+        opacity:1;
+    }
+    100% {
+        left: 1000%;
+        opacity: 0;
+    }
+}
+
+.loader_box {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: white;
+    z-index: 10;
+    position: fixed;
+    animation: bar-animation 3000ms 3000ms;
+    animation-fill-mode: forwards;
+}

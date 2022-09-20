@@ -50,7 +50,7 @@ h2 {
 section #bloc_restaurants_accueil .heart {
   position: absolute;
   right: 14%;
-  top: 101%;
+  top: 125%;
   font-size: 45px;
   color: #7D7D7D;
 }
@@ -75,15 +75,15 @@ section #bloc_restaurants_accueil .heart:hover .solidheart {
 }
 
 section #bloc_restaurants_accueil .heart_deux {
-  top: 130%;
+  top: 160%;
 }
 
 section #bloc_restaurants_accueil .heart_trois {
-  top: 159%;
+  top: 195%;
 }
 
 section #bloc_restaurants_accueil .heart_quatre {
-  top: 187%;
+  top: 230%;
 }
 
 @media (min-width: 992px) {
@@ -363,4 +363,105 @@ footer > .contact {
 
 body {
   margin: 0;
+}
+
+/*Animation du Loading Spinner */
+.bar {
+  border: 2px solid grey;
+  width: 60%;
+  height: 20px;
+  margin: 20% 20% 0% 20%;
+  position: fixed;
+  -webkit-animation: bar-animation 1ms 3000ms;
+          animation: bar-animation 1ms 3000ms;
+  z-index: 10;
+}
+
+.progression__bar {
+  height: 100%;
+  width: 100%;
+  transform-origin: left;
+  -webkit-animation: progress-bar 2500ms 500ms;
+          animation: progress-bar 2500ms 500ms;
+  background: linear-gradient(0.25turn, #FF79DA, #9356DC);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.1;
+  }
+  18% {
+    transform: scaleX(0.18);
+  }
+  36% {
+    transform: scaleX(0.36);
+  }
+  54% {
+    transform: scaleX(0.54);
+  }
+  78% {
+    transform: scaleX(0.78);
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.1;
+  }
+  18% {
+    transform: scaleX(0.18);
+  }
+  36% {
+    transform: scaleX(0.36);
+  }
+  54% {
+    transform: scaleX(0.54);
+  }
+  78% {
+    transform: scaleX(0.78);
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bar-animation {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+  100% {
+    left: 1000%;
+    opacity: 0;
+  }
+}
+@keyframes bar-animation {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+  100% {
+    left: 1000%;
+    opacity: 0;
+  }
+}
+.loader_box {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: white;
+  z-index: 10;
+  position: fixed;
+  -webkit-animation: bar-animation 3000ms 3000ms;
+          animation: bar-animation 3000ms 3000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }/*# sourceMappingURL=main.css.map */
