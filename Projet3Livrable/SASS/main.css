@@ -46,7 +46,7 @@ h2 {
   font-size: 40px;
 }
 
-/*test pour le coeur*/
+/*icône du coeur*/
 section #bloc_restaurants_accueil .heart {
   position: absolute;
   right: 14%;
@@ -464,4 +464,54 @@ body {
           animation: bar-animation 3000ms 3000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animation_page {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.33;
+  }
+  66% {
+    opacity: 0.66;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation_page {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.33;
+  }
+  66% {
+    opacity: 0.66;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.entrées {
+  -webkit-animation: animation_page 2000ms 500ms;
+          animation: animation_page 2000ms 500ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.plats {
+  -webkit-animation: animation_page 2000ms 2000ms;
+          animation: animation_page 2000ms 2000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.desserts {
+  -webkit-animation: animation_page 2000ms 4000ms;
+          animation: animation_page 2000ms 4000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }/*# sourceMappingURL=main.css.map */

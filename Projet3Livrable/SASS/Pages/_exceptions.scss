@@ -68,3 +68,33 @@ body {
     animation: bar-animation 3000ms 3000ms;
     animation-fill-mode: forwards;
 }
+
+@keyframes animation_page {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0.33;
+    }
+    66% {
+        opacity: 0.66;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.entrées {
+    animation: animation_page 2000ms 500ms;
+    animation-fill-mode: backwards;
+}
+
+.plats {
+    animation: animation_page 2000ms 2000ms;
+    animation-fill-mode: backwards;
+}
+
+.desserts {
+    animation: animation_page 2000ms 4000ms;
+    animation-fill-mode: backwards;
+}
