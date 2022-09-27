@@ -183,10 +183,21 @@ section #bloc_restaurants_accueil .heart_quatre {
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   display: none;
-  -webkit-animation: 300ms coche_moove;
-          animation: 300ms coche_moove;
+  -webkit-animation: 300ms coche_moove_mobile;
+          animation: 300ms coche_moove_mobile;
 }
 
+@media (min-width: 992px) {
+  .coche_background {
+    padding: 66px 65px 65px 64px;
+    left: 81%;
+    -webkit-animation: 300ms coche_moove_desktop;
+            animation: 300ms coche_moove_desktop;
+  }
+  .bloc_entree:hover .prix, .bloc_plat:hover .prix, .bloc_dessert:hover .prix {
+    margin-left: 62%;
+  }
+}
 @font-face {
   font-family: Shrikhand;
   src: url("/Projet3Livrable/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
@@ -576,7 +587,7 @@ body {
     rotate: 360deg;
   }
 }
-@-webkit-keyframes coche_moove {
+@-webkit-keyframes coche_moove_mobile {
   0% {
     padding: 5.5% 0% 6% 0%;
     left: 89.5%;
@@ -598,7 +609,7 @@ body {
     left: 78%;
   }
 }
-@keyframes coche_moove {
+@keyframes coche_moove_mobile {
   0% {
     padding: 5.5% 0% 6% 0%;
     left: 89.5%;
@@ -618,5 +629,49 @@ body {
   100% {
     padding: 5.5% 6% 6% 5.5%;
     left: 78%;
+  }
+}
+@-webkit-keyframes coche_moove_desktop {
+  0% {
+    padding: 66px 0px 65px 0px;
+    left: 91.1%;
+  }
+  25% {
+    padding: 66px 0px 65px 32px;
+    left: 89%;
+  }
+  50% {
+    padding: 66px 22px 65px 64px;
+    left: 84.5%;
+  }
+  75% {
+    padding: 66px 44px 65px 64px;
+    left: 82.6%;
+  }
+  100% {
+    padding: 66px 65px 65px 64px;
+    left: 81%;
+  }
+}
+@keyframes coche_moove_desktop {
+  0% {
+    padding: 66px 0px 65px 0px;
+    left: 91.1%;
+  }
+  25% {
+    padding: 66px 0px 65px 32px;
+    left: 89%;
+  }
+  50% {
+    padding: 66px 22px 65px 64px;
+    left: 84.5%;
+  }
+  75% {
+    padding: 66px 44px 65px 64px;
+    left: 82.6%;
+  }
+  100% {
+    padding: 66px 65px 65px 64px;
+    left: 81%;
   }
 }/*# sourceMappingURL=main.css.map */

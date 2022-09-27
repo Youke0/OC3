@@ -112,7 +112,7 @@ body {
     }
 }
 
-@keyframes coche_moove {
+@keyframes coche_moove_mobile {
     0% {
         padding: 5.5% 0% 6% 0%;
         left: 89.5%;
@@ -132,5 +132,28 @@ body {
     100% {
         padding: 5.5% 6% 6% 5.5%;
         left: 78%;
+    }
+}
+
+@keyframes coche_moove_desktop {
+    0% {
+        padding: 66px 0px 65px 0px;
+        left: 91.1%;
+    }
+    25% {
+        padding: 66px 0px 65px 32px;
+        left: 89%;
+    }
+    50% {
+        padding: 66px 22px 65px 64px;
+        left: 84.5%;
+    }
+    75% {
+        padding: 66px 44px 65px 64px;
+        left: 82.6%;
+    }
+    100% {
+        padding: 66px 65px 65px 64px;
+        left: 81%;
     }
 }

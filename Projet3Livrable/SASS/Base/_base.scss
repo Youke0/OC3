@@ -186,5 +186,18 @@ section #bloc_restaurants_accueil .heart_quatre {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     display: none;
-    animation: 300ms coche_moove;
+    animation: 300ms coche_moove_mobile;
+}
+
+@media (min-width:992px) {
+    .coche_background {
+        padding: 66px 65px 65px 64px;
+        left: 81%;
+        animation: 300ms coche_moove_desktop;
+    }
+    .bloc_entree:hover, .bloc_plat:hover, .bloc_dessert:hover {
+        .prix {
+            margin-left: 62%;
+        }
+    }
 }
