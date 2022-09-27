@@ -128,7 +128,7 @@ section #bloc_restaurants_accueil .heart_quatre {
     @include box-shadow;
 }
 
-.prix, .coche{
+.prix {
     padding: 9% 5% 4% 5%;
     margin-left: 76.5%;
     position: absolute;
@@ -139,20 +139,20 @@ section #bloc_restaurants_accueil .heart_quatre {
 .entrée, .plat, .dessert {
     font-size: 46px;
     margin: 2% 0% 2% 4%;
+    text-overflow: ellipsis;
+    width: auto;
 }
 
 .accompagnements {
     margin: 0% 0% 4% 4%;
     opacity: 80%;
+    text-overflow: ellipsis;
+    width: auto;
 }
 
 .coche {
-    padding: 7% 6.5% 7% 6%;
-    background: $tertiary-color;
     color: white;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    visibility: hidden;
+    transition: 1s;
 }
 
 .prix:hover {
@@ -160,6 +160,25 @@ section #bloc_restaurants_accueil .heart_quatre {
     /*margin-left:76.5% pour la position de base du prix*/
 }
 
-.coche:hover {
-    visibility: visible;
+.bloc_entree:hover {
+    .prix{
+        margin-left: 57.5%;
+    }
+    .coche_background {
+        display: block;
+    }
+    .coche {
+        animation: 600ms coche_animation;
+    }
+}
+
+.coche_background {
+    background-color: $tertiary-color;
+    padding: 5.5% 6% 6% 5.5%;
+    position: absolute;
+    left: 78%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: none;
+    animation: 300ms coche_moove;
 }

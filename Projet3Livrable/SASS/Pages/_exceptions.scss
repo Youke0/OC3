@@ -69,6 +69,8 @@ body {
     animation-fill-mode: forwards;
 }
 
+/*Animation de la page restaurant*/
+
 @keyframes animation_page {
     0% {
         opacity: 0;
@@ -97,4 +99,61 @@ body {
 .desserts {
     animation: animation_page 2000ms 4000ms;
     animation-fill-mode: backwards;
+}
+
+/*Animation du coche et du prix*/
+
+@keyframes coche_animation {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes coche_moove {
+    0% {
+        padding: 5.5% 0% 6% 0%;
+        left: 89.5%;
+    }
+    25% {
+        padding: 5.5% 0% 6% 3%;
+        left: 86.5%
+    }
+    50% {
+        padding: 5.5% 2% 6% 5.5%;
+        left: 82%;
+    }
+    75% {
+        padding: 5.5% 4% 6% 5.5%;
+        left: 80%;
+    }
+    100% {
+        padding: 5.5% 6% 6% 5.5%;
+        left: 78%;
+    }
+}
+
+@keyframes coche_moove_deux {
+    100% {
+        padding: 5.5% 0% 6% 0%;
+        left: 89.5%;
+    }
+    75% {
+        padding: 5.5% 0% 6% 3%;
+        left: 86.5%
+    }
+    50% {
+        padding: 5.5% 2% 6% 5.5%;
+        left: 82%;
+    }
+    25% {
+        padding: 5.5% 4% 6% 5.5%;
+        left: 80%;
+    }
+    0% {
+        padding: 5.5% 6% 6% 5.5%;
+        left: 78%;
+    }
 }

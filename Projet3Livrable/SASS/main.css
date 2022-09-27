@@ -126,7 +126,7 @@ section #bloc_restaurants_accueil .heart_quatre {
   box-shadow: 0px 3px 10px #cccccc;
 }
 
-.prix, .coche {
+.prix {
   padding: 9% 5% 4% 5%;
   margin-left: 76.5%;
   position: absolute;
@@ -137,20 +137,20 @@ section #bloc_restaurants_accueil .heart_quatre {
 .entrée, .plat, .dessert {
   font-size: 46px;
   margin: 2% 0% 2% 4%;
+  text-overflow: ellipsis;
+  width: auto;
 }
 
 .accompagnements {
   margin: 0% 0% 4% 4%;
   opacity: 80%;
+  text-overflow: ellipsis;
+  width: auto;
 }
 
 .coche {
-  padding: 7% 6.5% 7% 6%;
-  background: #99E2D0;
   color: white;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  visibility: hidden;
+  transition: 1s;
 }
 
 .prix:hover {
@@ -158,8 +158,27 @@ section #bloc_restaurants_accueil .heart_quatre {
   /*margin-left:76.5% pour la position de base du prix*/
 }
 
-.coche:hover {
-  visibility: visible;
+.bloc_entree:hover .prix {
+  margin-left: 57.5%;
+}
+.bloc_entree:hover .coche_background {
+  display: block;
+}
+.bloc_entree:hover .coche {
+  -webkit-animation: 600ms coche_animation;
+          animation: 600ms coche_animation;
+}
+
+.coche_background {
+  background-color: #99E2D0;
+  padding: 5.5% 6% 6% 5.5%;
+  position: absolute;
+  left: 78%;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: none;
+  -webkit-animation: 300ms coche_moove;
+          animation: 300ms coche_moove;
 }
 
 @font-face {
@@ -484,6 +503,7 @@ body {
           animation-fill-mode: forwards;
 }
 
+/*Animation de la page restaurant*/
 @-webkit-keyframes animation_page {
   0% {
     opacity: 0;
@@ -498,7 +518,6 @@ body {
     opacity: 1;
   }
 }
-
 @keyframes animation_page {
   0% {
     opacity: 0;
@@ -532,4 +551,110 @@ body {
           animation: animation_page 2000ms 4000ms;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+/*Animation du coche et du prix*/
+@-webkit-keyframes coche_animation {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes coche_animation {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@-webkit-keyframes coche_moove {
+  0% {
+    padding: 5.5% 0% 6% 0%;
+    left: 89.5%;
+  }
+  25% {
+    padding: 5.5% 0% 6% 3%;
+    left: 86.5%;
+  }
+  50% {
+    padding: 5.5% 2% 6% 5.5%;
+    left: 82%;
+  }
+  75% {
+    padding: 5.5% 4% 6% 5.5%;
+    left: 80%;
+  }
+  100% {
+    padding: 5.5% 6% 6% 5.5%;
+    left: 78%;
+  }
+}
+@keyframes coche_moove {
+  0% {
+    padding: 5.5% 0% 6% 0%;
+    left: 89.5%;
+  }
+  25% {
+    padding: 5.5% 0% 6% 3%;
+    left: 86.5%;
+  }
+  50% {
+    padding: 5.5% 2% 6% 5.5%;
+    left: 82%;
+  }
+  75% {
+    padding: 5.5% 4% 6% 5.5%;
+    left: 80%;
+  }
+  100% {
+    padding: 5.5% 6% 6% 5.5%;
+    left: 78%;
+  }
+}
+@-webkit-keyframes coche_moove_deux {
+  100% {
+    padding: 5.5% 0% 6% 0%;
+    left: 89.5%;
+  }
+  75% {
+    padding: 5.5% 0% 6% 3%;
+    left: 86.5%;
+  }
+  50% {
+    padding: 5.5% 2% 6% 5.5%;
+    left: 82%;
+  }
+  25% {
+    padding: 5.5% 4% 6% 5.5%;
+    left: 80%;
+  }
+  0% {
+    padding: 5.5% 6% 6% 5.5%;
+    left: 78%;
+  }
+}
+@keyframes coche_moove_deux {
+  100% {
+    padding: 5.5% 0% 6% 0%;
+    left: 89.5%;
+  }
+  75% {
+    padding: 5.5% 0% 6% 3%;
+    left: 86.5%;
+  }
+  50% {
+    padding: 5.5% 2% 6% 5.5%;
+    left: 82%;
+  }
+  25% {
+    padding: 5.5% 4% 6% 5.5%;
+    left: 80%;
+  }
+  0% {
+    padding: 5.5% 6% 6% 5.5%;
+    left: 78%;
+  }
 }/*# sourceMappingURL=main.css.map */
