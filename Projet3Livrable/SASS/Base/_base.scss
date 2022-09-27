@@ -160,7 +160,7 @@ section #bloc_restaurants_accueil .heart_quatre {
     /*margin-left:76.5% pour la position de base du prix*/
 }
 
-.bloc_entree:hover {
+.bloc_entree:hover, .bloc_plat:hover, .bloc_dessert:hover {
     .prix{
         margin-left: 57.5%;
     }
@@ -169,6 +169,12 @@ section #bloc_restaurants_accueil .heart_quatre {
     }
     .coche {
         animation: 600ms coche_animation;
+    }
+    .entrée, .plat, .dessert, .accompagnements {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 57%;
     }
 }
 

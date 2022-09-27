@@ -158,15 +158,21 @@ section #bloc_restaurants_accueil .heart_quatre {
   /*margin-left:76.5% pour la position de base du prix*/
 }
 
-.bloc_entree:hover .prix {
+.bloc_entree:hover .prix, .bloc_plat:hover .prix, .bloc_dessert:hover .prix {
   margin-left: 57.5%;
 }
-.bloc_entree:hover .coche_background {
+.bloc_entree:hover .coche_background, .bloc_plat:hover .coche_background, .bloc_dessert:hover .coche_background {
   display: block;
 }
-.bloc_entree:hover .coche {
+.bloc_entree:hover .coche, .bloc_plat:hover .coche, .bloc_dessert:hover .coche {
   -webkit-animation: 600ms coche_animation;
           animation: 600ms coche_animation;
+}
+.bloc_entree:hover .entrée, .bloc_entree:hover .plat, .bloc_entree:hover .dessert, .bloc_entree:hover .accompagnements, .bloc_plat:hover .entrée, .bloc_plat:hover .plat, .bloc_plat:hover .dessert, .bloc_plat:hover .accompagnements, .bloc_dessert:hover .entrée, .bloc_dessert:hover .plat, .bloc_dessert:hover .dessert, .bloc_dessert:hover .accompagnements {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 57%;
 }
 
 .coche_background {
@@ -610,50 +616,6 @@ body {
     left: 80%;
   }
   100% {
-    padding: 5.5% 6% 6% 5.5%;
-    left: 78%;
-  }
-}
-@-webkit-keyframes coche_moove_deux {
-  100% {
-    padding: 5.5% 0% 6% 0%;
-    left: 89.5%;
-  }
-  75% {
-    padding: 5.5% 0% 6% 3%;
-    left: 86.5%;
-  }
-  50% {
-    padding: 5.5% 2% 6% 5.5%;
-    left: 82%;
-  }
-  25% {
-    padding: 5.5% 4% 6% 5.5%;
-    left: 80%;
-  }
-  0% {
-    padding: 5.5% 6% 6% 5.5%;
-    left: 78%;
-  }
-}
-@keyframes coche_moove_deux {
-  100% {
-    padding: 5.5% 0% 6% 0%;
-    left: 89.5%;
-  }
-  75% {
-    padding: 5.5% 0% 6% 3%;
-    left: 86.5%;
-  }
-  50% {
-    padding: 5.5% 2% 6% 5.5%;
-    left: 82%;
-  }
-  25% {
-    padding: 5.5% 4% 6% 5.5%;
-    left: 80%;
-  }
-  0% {
     padding: 5.5% 6% 6% 5.5%;
     left: 78%;
   }
