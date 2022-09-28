@@ -1,4 +1,4 @@
-<h1>Ohmyfood<h1>
+<h1>Ohmyfood</h1>
 
 <p>Voir le projet OhMyFood :https://youke0.github.io/Projet3/Projet3Livrable/HTML/pagedaccueil.html 
 
@@ -9,7 +9,7 @@ Plus de perte de temps à consulter la carte !
 
 <h2>Contenu des pages</h2>
 
-<ul><h3>Page d'accueil (*1)<h3>
+<ul><h3>Page d'accueil (*1)</h3>
 
 <li>Affichage de la localisation des restaurants. À terme il sera possible de choisir sa localisation pour trouver
 des restaurants proches d'un certain lieu.
@@ -18,27 +18,27 @@ des restaurants proches d'un certain lieu.
 page du menu.
 </ul>
 
-<ul><h3>Page de menu (*4)<h3>
+<ul><h3>Page de menu (*4)</h3>
 <li>4 pages contenant chacune le menu d'un restaurant.
 </ul>
 
-<ul><h3>Footer<h3>
+<ul><h3>Footer</h3>
 <li>Le footer est identique sur toutes les pages.
 <li>Au clic sur "Contact", un renvoi vers une adresse mail est effectué.
 </ul>
 
-<ul><h3>Header<h3>
+<ul><h3>Header</h3>
 <li>Le header est présent sur toutes les pages.
 <li>Sur la page d'accueil il contient le logo du site.
 <li>Sur les pages de menu, il contient en plus un bouton de retour vers la page d'accueil.
 </ul>
 
-<h2>Effets graphiques et animations<h2>
+<h2>Effets graphiques et animations</h2>
 
 <p>Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser les animations
 ou transitions CSS, pas de JavaScript ni de librairie.</p>
 
-<ul><h3>Boutons<h3>
+<ul><h3>Boutons</h3>
 
 <li>Au survol, la couleur de fond des boutons principaux devra légèrement s'éclaircir. 
 L'ombre portée devra également être plus visible.
@@ -47,7 +47,7 @@ coeur est présent sur la maquette. Au clic, il devra se remplir progressivement
 l'effet peut apparaître au survol au lieu du clic.
 </ul>
 
-<ul><h3>Page d'accueil<h3>
+<ul><h3>Page d'accueil</h3>
 
 <li>Quand l'application aura plus de menus, un "loading spinner" sera nécessaire. Sur cette maquette, nous 
 souhaitons en avoir un aperçu. Il devra apparaître pendant 1 à 3 seconds quand on arrive sur la page d'accueil, 
@@ -55,7 +55,7 @@ couvrir l'intégralité de l'écran, et utiliser les animations CSS (pas de libr
 pas défini, toute proposition est donc la bienvenue tant qu'elle est cohérente avec la charte graphique du site.
 </ul>
 
-<ul><h3>Page de menu<h3>
+<ul><h3>Page de menu</h3>
 
 <li>À l'arrivée sur la page, les plats devront apparaître progressivement avec un léger décalage dans le temps.
 Ils pourront soit apparaître un par un, soit par groupe "Entrée", "Plat", "Dessert". Un exemple de l'effet 
