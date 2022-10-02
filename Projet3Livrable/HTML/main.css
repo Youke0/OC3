@@ -58,6 +58,26 @@ h2 {
   font-size: 40px;
 }
 
+@media (min-width: 992px) {
+  section h2 {
+    padding-top: 2%;
+    margin-bottom: 2%;
+  }
+  section > #bloc_restaurants_accueil {
+    display: flex;
+    padding: 0px;
+  }
+  section figure {
+    margin-right: 1%;
+    margin-left: 2%;
+  }
+  section figure .icone_nouveau1, section figure .icone_nouveau2 {
+    left: 52%;
+  }
+  section figure .legende {
+    margin-top: 8%;
+  }
+}
 /*icône du coeur*/
 section #bloc_restaurants_accueil .heart {
   float: right;
@@ -78,23 +98,25 @@ section #bloc_restaurants_accueil .heart:hover .solidheart {
   transform: scale(1);
 }
 
+@media (min-width: 992px) {
+  section #bloc_restaurants_accueil .heart {
+    font-size: 20px;
+  }
+}
 /*Code CSS des pages des restaurants*/
 .section_restaurant {
   padding: 10% 0% 0% 0%;
 }
-
-.titre_entrees, .titre_plats, .titre_desserts {
+.section_restaurant .titre_entrees, .section_restaurant .titre_plats, .section_restaurant .titre_desserts {
   padding: 1% 0% 1% 4%;
   font-size: 50px;
   font-family: sans-serif;
   font-weight: 100;
 }
-
-.entrées, .plats, .desserts {
+.section_restaurant .entrées, .section_restaurant .plats, .section_restaurant .desserts {
   padding: 0% 3% 0% 3%;
 }
-
-.bloc_entree, .bloc_plat, .bloc_dessert {
+.section_restaurant .bloc_entree, .section_restaurant .bloc_plat, .section_restaurant .bloc_dessert {
   font-size: 38px;
   background-color: white;
   display: flex;
@@ -103,8 +125,7 @@ section #bloc_restaurants_accueil .heart:hover .solidheart {
   border-radius: 40px;
   box-shadow: 0px 3px 10px #cccccc;
 }
-
-.prix {
+.section_restaurant .prix {
   padding: 9% 5% 4% 5%;
   margin-left: 76.5%;
   position: absolute;
@@ -112,6 +133,26 @@ section #bloc_restaurants_accueil .heart:hover .solidheart {
   font-weight: 900;
 }
 
+@media (min-width: 992px) {
+  .section_restaurant {
+    display: flex;
+  }
+  .section_restaurant .prix {
+    font-size: 20px;
+    padding: 3% 0% 0% 0%;
+    margin-left: 24%;
+  }
+  .section_restaurant .bloc_entree, .section_restaurant .bloc_plat, .section_restaurant .bloc_dessert {
+    font-size: 14px;
+    border-radius: 20px;
+    width: 345px;
+    height: 80px;
+    margin-bottom: 10%;
+  }
+  .section_restaurant .titre_entrees, .section_restaurant .titre_plats, .section_restaurant .titre_desserts {
+    font-size: 40px;
+  }
+}
 .entrée, .plat, .dessert {
   font-size: 46px;
   margin: 2% 0% 2% 4%;
@@ -126,6 +167,11 @@ section #bloc_restaurants_accueil .heart:hover .solidheart {
   width: auto;
 }
 
+@media (min-width: 992px) {
+  .entrée, .plat, .dessert {
+    font-size: 20px;
+  }
+}
 .coche {
   color: white;
   transition: 1s;
@@ -133,7 +179,6 @@ section #bloc_restaurants_accueil .heart:hover .solidheart {
 
 .prix:hover {
   margin-left: 58.5%;
-  /*margin-left:76.5% pour la position de base du prix*/
 }
 
 .bloc_entree:hover .prix, .bloc_plat:hover .prix, .bloc_dessert:hover .prix {
@@ -167,13 +212,25 @@ section #bloc_restaurants_accueil .heart:hover .solidheart {
 
 @media (min-width: 992px) {
   .coche_background {
-    padding: 66px 65px 65px 64px;
-    left: 81%;
+    padding: 26px 30px 26px 30px;
+    left: 23.3%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     -webkit-animation: 300ms coche_moove_desktop;
             animation: 300ms coche_moove_desktop;
   }
+  .coche_background_plat {
+    left: 56.7%;
+    -webkit-animation: 300ms coche_moove_plats;
+            animation: 300ms coche_moove_plats;
+  }
+  .coche_background_dessert {
+    left: 90%;
+    -webkit-animation: 300ms coche_moove_desserts;
+            animation: 300ms coche_moove_desserts;
+  }
   .bloc_entree:hover .prix, .bloc_plat:hover .prix, .bloc_dessert:hover .prix {
-    margin-left: 62%;
+    margin-left: 17%;
   }
 }
 @font-face {
@@ -206,6 +263,11 @@ p, nav, figcaption, a {
   margin: 2% 0% 2% 0%;
 }
 
+@media (min-width: 992px) {
+  .restaurant_localisation, .restaurant_name {
+    font-size: 20px;
+  }
+}
 /*Bouton de la page d'accueil*/
 .boutonaccueil {
   padding: 40px 50px 40px 50px;
@@ -308,6 +370,11 @@ header > h1 > a {
   margin-left: 40%;
 }
 
+@media (min-width: 992px) {
+  .coeur_restaurant {
+    margin-left: 40%;
+  }
+}
 /*Partie Fonctionnement de la page d'Accueil*/
 header > h2, nav {
   background-color: white;
@@ -611,45 +678,133 @@ body {
 }
 @-webkit-keyframes coche_moove_desktop {
   0% {
-    padding: 66px 0px 65px 0px;
-    left: 91.1%;
+    padding: 26px 0px 26px 0px;
+    left: 28.1%;
   }
   25% {
-    padding: 66px 0px 65px 32px;
-    left: 89%;
+    padding: 26px 0px 26px 15px;
+    left: 26.9%;
   }
   50% {
-    padding: 66px 22px 65px 64px;
-    left: 84.5%;
+    padding: 26px 10px 26px 30px;
+    left: 24.9%;
   }
   75% {
-    padding: 66px 44px 65px 64px;
-    left: 82.6%;
+    padding: 26px 20px 26px 30px;
+    left: 24.1%;
   }
   100% {
-    padding: 66px 65px 65px 64px;
-    left: 81%;
+    padding: 26px 30px 26px 30px;
+    left: 23.3%;
   }
 }
 @keyframes coche_moove_desktop {
   0% {
-    padding: 66px 0px 65px 0px;
-    left: 91.1%;
+    padding: 26px 0px 26px 0px;
+    left: 28.1%;
   }
   25% {
-    padding: 66px 0px 65px 32px;
-    left: 89%;
+    padding: 26px 0px 26px 15px;
+    left: 26.9%;
   }
   50% {
-    padding: 66px 22px 65px 64px;
-    left: 84.5%;
+    padding: 26px 10px 26px 30px;
+    left: 24.9%;
   }
   75% {
-    padding: 66px 44px 65px 64px;
-    left: 82.6%;
+    padding: 26px 20px 26px 30px;
+    left: 24.1%;
   }
   100% {
-    padding: 66px 65px 65px 64px;
-    left: 81%;
+    padding: 26px 30px 26px 30px;
+    left: 23.3%;
+  }
+}
+@-webkit-keyframes coche_moove_plats {
+  0% {
+    padding: 26px 0px 26px 0px;
+    left: 61.4%;
+  }
+  25% {
+    padding: 26px 0px 26px 15px;
+    left: 60.3%;
+  }
+  50% {
+    padding: 26px 10px 26px 30px;
+    left: 58.3%;
+  }
+  75% {
+    padding: 26px 20px 26px 30px;
+    left: 57.5%;
+  }
+  100% {
+    padding: 26px 30px 26px 30px;
+    left: 56.7%;
+  }
+}
+@keyframes coche_moove_plats {
+  0% {
+    padding: 26px 0px 26px 0px;
+    left: 61.4%;
+  }
+  25% {
+    padding: 26px 0px 26px 15px;
+    left: 60.3%;
+  }
+  50% {
+    padding: 26px 10px 26px 30px;
+    left: 58.3%;
+  }
+  75% {
+    padding: 26px 20px 26px 30px;
+    left: 57.5%;
+  }
+  100% {
+    padding: 26px 30px 26px 30px;
+    left: 56.7%;
+  }
+}
+@-webkit-keyframes coche_moove_desserts {
+  0% {
+    padding: 26px 0px 26px 0px;
+    left: 94.7%;
+  }
+  25% {
+    padding: 26px 0px 26px 15px;
+    left: 93.6%;
+  }
+  50% {
+    padding: 26px 10px 26px 30px;
+    left: 91.6%;
+  }
+  75% {
+    padding: 26px 20px 26px 30px;
+    left: 90.8%;
+  }
+  100% {
+    padding: 26px 30px 26px 30px;
+    left: 90%;
+  }
+}
+@keyframes coche_moove_desserts {
+  0% {
+    padding: 26px 0px 26px 0px;
+    left: 94.7%;
+  }
+  25% {
+    padding: 26px 0px 26px 15px;
+    left: 93.6%;
+  }
+  50% {
+    padding: 26px 10px 26px 30px;
+    left: 91.6%;
+  }
+  75% {
+    padding: 26px 20px 26px 30px;
+    left: 90.8%;
+  }
+  100% {
+    padding: 26px 30px 26px 30px;
+    left: 90%;
   }
 }/*# sourceMappingURL=main.css.map */

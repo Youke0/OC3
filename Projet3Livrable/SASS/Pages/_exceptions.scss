@@ -137,23 +137,69 @@ body {
 
 @keyframes coche_moove_desktop {
     0% {
-        padding: 66px 0px 65px 0px;
-        left: 91.1%;
+        padding: 26px 0px 26px 0px;
+        left: 28.1%;
     }
     25% {
-        padding: 66px 0px 65px 32px;
-        left: 89%;
+        padding: 26px 0px 26px 15px;
+        left: 26.9%;
     }
     50% {
-        padding: 66px 22px 65px 64px;
-        left: 84.5%;
+        padding: 26px 10px 26px 30px;
+        left: 24.9%;
     }
     75% {
-        padding: 66px 44px 65px 64px;
-        left: 82.6%;
+        padding: 26px 20px 26px 30px;
+        left: 24.1%;
     }
     100% {
-        padding: 66px 65px 65px 64px;
-        left: 81%;
+        padding: 26px 30px 26px 30px;
+        left: 23.3%;
+    }
+}
+
+@keyframes coche_moove_plats {
+    0% {
+        padding: 26px 0px 26px 0px;
+        left: 61.4%;
+    }
+    25% {
+        padding: 26px 0px 26px 15px;
+        left: 60.3%;
+    }
+    50% {
+        padding: 26px 10px 26px 30px;
+        left: 58.3%;
+    }
+    75% {
+        padding: 26px 20px 26px 30px;
+        left: 57.5%;
+    }
+    100% {
+        padding: 26px 30px 26px 30px;
+        left: 56.7%;
+    }
+}
+
+@keyframes coche_moove_desserts {
+    0% {
+        padding: 26px 0px 26px 0px;
+        left: 94.7%;
+    }
+    25% {
+        padding: 26px 0px 26px 15px;
+        left: 93.6%;
+    }
+    50% {
+        padding: 26px 10px 26px 30px;
+        left: 91.6%;
+    }
+    75% {
+        padding: 26px 20px 26px 30px;
+        left: 90.8%;
+    }
+    100% {
+        padding: 26px 30px 26px 30px;
+        left: 90%;
     }
 }

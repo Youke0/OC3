@@ -29,3 +29,9 @@ p, nav, figcaption, a {
     font-size: 30px;
     margin: 2% 0% 2% 0%;
 }
+
+@media (min-width:992px) {
+    .restaurant_localisation, .restaurant_name{
+        font-size: 20px;
+    }
+}

@@ -56,6 +56,30 @@ h2 {
     font-size: 40px;
 }
 
+@media (min-width:992px) {
+    section {
+        h2 {
+            padding-top: 2%;
+            margin-bottom: 2%;
+        }
+        &>#bloc_restaurants_accueil {
+            display: flex;
+            padding: 0px;
+        }
+        figure {
+            margin-right: 1%;
+            margin-left: 2%;
+                .icone_nouveau1, .icone_nouveau2{
+                    left: 52%;
+                }
+                .legende {
+                    margin-top: 8%;
+                }
+        }
+    }
+
+}
+
 /*icône du coeur*/
 
 section #bloc_restaurants_accueil {
@@ -81,39 +105,65 @@ section #bloc_restaurants_accueil {
         transform: scale(1);
     }
 }
+
+@media (min-width:992px) {
+    section #bloc_restaurants_accueil {
+        .heart {
+        font-size: 20px;
+        }
+    }
+}
+
+
 /*Code CSS des pages des restaurants*/
 
 .section_restaurant {
-    padding: 10% 0% 0% 0%;
+    padding: 10% 0% 0% 0%;  
+        .titre_entrees, .titre_plats, .titre_desserts {
+            padding: 1% 0% 1% 4%;
+            font-size: 50px;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+        .entrées, .plats, .desserts {
+            padding: 0% 3% 0% 3%;
+        }
+        .bloc_entree, .bloc_plat, .bloc_dessert {
+            font-size: 38px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+            border-radius: 40px;
+            @include box-shadow;
+        }
+        .prix {
+            padding: 9% 5% 4% 5%;
+            margin-left: 76.5%;
+            position: absolute;
+            font-size: 50px;
+            font-weight: 900;
+        }
 }
-
-.titre_entrees, .titre_plats, .titre_desserts {
-    padding: 1% 0% 1% 4%;
-    font-size: 50px;
-    font-family: sans-serif;
-    font-weight: 100;
-}
-
-.entrées, .plats, .desserts {
-    padding: 0% 3% 0% 3%;
-}
-
-.bloc_entree, .bloc_plat, .bloc_dessert {
-    font-size: 38px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    border-radius: 40px;
-    @include box-shadow;
-}
-
-.prix {
-    padding: 9% 5% 4% 5%;
-    margin-left: 76.5%;
-    position: absolute;
-    font-size: 50px;
-    font-weight: 900;
+@media (min-width:992px) {
+    .section_restaurant {
+        display: flex;
+    }
+    .section_restaurant .prix {
+        font-size: 20px;
+        padding: 3% 0% 0% 0%;
+        margin-left: 24%;
+    }
+    .section_restaurant .bloc_entree, .section_restaurant .bloc_plat, .section_restaurant .bloc_dessert {
+        font-size: 14px;
+        border-radius: 20px;
+        width: 345px;
+        height: 80px;
+        margin-bottom: 10%;
+    }
+    .section_restaurant .titre_entrees, .section_restaurant .titre_plats, .section_restaurant .titre_desserts {
+        font-size: 40px;
+    }
 }
 
 .entrée, .plat, .dessert {
@@ -130,6 +180,12 @@ section #bloc_restaurants_accueil {
     width: auto;
 }
 
+@media (min-width:992px) {
+    .entrée, .plat, .dessert {
+        font-size: 20px;
+    }
+}
+
 .coche {
     color: white;
     transition: 1s;
@@ -137,7 +193,6 @@ section #bloc_restaurants_accueil {
 
 .prix:hover {
     margin-left: 58.5%;
-    /*margin-left:76.5% pour la position de base du prix*/
 }
 
 .bloc_entree:hover, .bloc_plat:hover, .bloc_dessert:hover {
@@ -171,13 +226,23 @@ section #bloc_restaurants_accueil {
 
 @media (min-width:992px) {
     .coche_background {
-        padding: 66px 65px 65px 64px;
-        left: 81%;
+        padding: 26px 30px 26px 30px;
+        left: 23.3%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
         animation: 300ms coche_moove_desktop;
+    }
+    .coche_background_plat {
+        left: 56.7%;
+        animation: 300ms coche_moove_plats;
+    }
+    .coche_background_dessert {
+        left: 90%;
+        animation: 300ms coche_moove_desserts;
     }
     .bloc_entree:hover, .bloc_plat:hover, .bloc_dessert:hover {
         .prix {
-            margin-left: 62%;
+            margin-left: 17%;
         }
     }
 }
