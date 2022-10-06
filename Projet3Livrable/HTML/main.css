@@ -624,14 +624,6 @@ body {
     rotate: 360deg;
   }
 }
-@keyframes coche_animation {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
 @-webkit-keyframes coche_moove_mobile {
   0% {
     padding: 5.5% 0% 6% 0%;
