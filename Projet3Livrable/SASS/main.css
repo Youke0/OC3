@@ -235,13 +235,13 @@ section #bloc_restaurants_accueil .heart:hover .solidheart {
 }
 @font-face {
   font-family: Shrikhand;
-  src: url("/Projet3Livrable/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+  src: url("../../Shrikhand/Shrikhand-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: Roboto;
-  src: url("/Projet3Livrable/Roboto/Roboto-Medium.ttf") format("truetype");
-  src: url("/Projet3Livrable/Roboto/Roboto-Regular.ttf") format("truetype");
-  src: url("/Projet3Livrable/Roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("../../Roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("../../Roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("../../Roboto/Roboto-Bold.ttf") format("truetype");
 }
 h1, h2, h3 {
   font-family: Shrikhand;
