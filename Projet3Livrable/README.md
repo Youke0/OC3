@@ -1,6 +1,6 @@
 <h1>Ohmyfood</h1>
 
-<p>Voir le projet OhMyFood :https://youke0.github.io/Projet3/Projet3Livrable/HTML/pagedaccueil.html 
+<p>Voir le projet OhMyFood :https://youke0.github.io/OhMyFood/Projet3Livrable/HTML/pagedaccueil.html 
 
 Ohmyfood est une entreprise de commande de repas en ligne. Le concept permet aux utilisateurs de composer
 leur propre menu et réduire leur temps d'attente dans les restaurants car leur menu est préparé à l'avance.
